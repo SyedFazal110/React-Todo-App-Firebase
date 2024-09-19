@@ -10,11 +10,11 @@ import Todo from './pages/Todo';
 let router = createBrowserRouter([
   {
     path : "/",
-    element : <Layout/>,
+    element : <Login/>,
   },
   {
-    path : "login",
-    element : <Login/>
+    path : "layout",
+    element : <Layout/>
   },
   {
     path : "register",
