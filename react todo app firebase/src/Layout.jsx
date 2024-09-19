@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { Outlet } from 'react-router-dom'
 
 const Layout = () => {
   const [todo, settodo] = useState([])
@@ -18,6 +19,7 @@ const Layout = () => {
 
   return (
     <>
+    <Outlet/>
       <div>
         <h4 className='text-center'>React Todo App</h4>
         <form onSubmit={addTodo}>
